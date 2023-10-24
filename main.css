@@ -1,0 +1,33 @@
+.bright {
+    color: cornflowerblue; 
+    font-size: x-large; 
+    font-weight: bold;
+    font-variant: small-caps;
+    
+}
+.design {
+    color: darkviolet;
+    font-weight: bold;
+    font-family: monospace;
+}
+p {
+    font-family: fantasy;
+    font-size: medium;
+    font-style: oblique;
+}
+#information {
+    color: turquoise;
+    font-size: 42px;
+    outline-color: black;
+}
+#information2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+body {
+    background-image: url(https://i.pinimg.com/originals/8f/61/cc/8f61cc8e4357b9bae09d014947471b82.jpg);
+    background-repeat: repeat-x;
+}
+.body {
+    background-image: none;
+}

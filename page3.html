@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+        function checkboxes()
+        {
+           var firstName = document.getElementById("fName").value;
+            if(firstName == "")
+            {
+                document.getElementById("fName").style.borderBlockColor = "red";
+                document.getElementById("fName").focus();
+            }
+            var lastName = document.getElementById("lName").value;
+            if(lastName == "")
+            {
+                document.getElementById("lName").style.borderBlockColor = "red";
+                document.getElementById("lName").focus();
+            }
+            var email = document.getElementById("eMail").value;
+            if(email == "")
+            {
+                document.getElementById("eMail").style.borderBlockColor = "red";
+                document.getElementById("eMail").focus();
+            }
+            var yes = document.getElementById("yes").checked
+                var no = document.getElementById("no").checked;
+                if (!yes && !no) {
+                    ok = false;
+                    document.getElementsByClassName("label")[0].style.border = '1px solid red'
+                    document.getElementsByClassName("label2")[0].style.border = '1px solid red';
+                } 
+                var yes = document.getElementById("yes").checked
+                var no = document.getElementById("no").checked;
+                if (!yes && !no) {
+                    ok = false;
+                    document.getElementById("selectBox").innerHTML = "Please select an option listed above."
+                    document.getElementById("selectBox").style.color = "red";
+                }
+        }
+        </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+ <body><h1>Hello! Welcome to Page 3</h1>
+    <p>Contact Us</p>
+                <p><form>
+                    <lable for="name">First Name:</lable>
+                    <input type="text" id="fName" name="name">
+                </form>
+                <form>
+                    <lable for="name">Last Name:</lable>
+                    <input type="text" id="lName" name="name">
+                </form>
+                <form>
+                    <lable for="name">Email:</lable>
+                    <input type="text" id="eMail" name="name">
+                </form>
+            </p>
+            <p>Do you agree to share your information so that we may contact you?</p>
+            <p>
+                 <form>
+                    <label for="yes" class="label">Yes</label>
+                    <input type="checkbox" id="yes" name="yes" value="yes" class="box1">
+                    <label for="no" class="label2">No</label>
+                    <input type="checkbox" id="no" name="yes" value="no" class="box2">
+                 </form>
+            
+            <p>
+                <button type="button" class="btn btn-primary" onclick='checkboxes()'>Submit</button>
+                <div id="selectBox"></div>
+                <p>
+                    <a href="index.html">Homepage</a>
+                    <a href="page2_story.html">Page 2</a>
+
+
+
+
+
+
+
+
+
+    </body>    
+</html>

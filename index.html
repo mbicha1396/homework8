@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <title>homepage</title>
+    <style>
+      h1 {
+        font-size: xx-large;
+        text-align: center;
+        font-family: serif;
+        color: aquamarine;
+        outline: auto;
+      }
+      h3 {
+        font-size: x-large;
+        font-family: inherit;
+        font-weight: bolder;
+        color: crimson;
+      }
+      .p-content {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+    </style>
+  
+    <script>
+      function checkboxes()
+      {
+       var yes = document.getElementById("yes").checked
+                var no = document.getElementById("no").checked;
+                if (!yes && !no) {
+                    ok = false;
+                    document.getElementsByClassName("label3")[0].style.border = '1px solid red'
+                    document.getElementsByClassName("no")[0].style.border = '1px solid red';
+                }
+             
+        }
+    </script>
+  </head>
+  <link rel="stylesheet" href="main.css">
+    <body class="body"><h1>Welcome to my page!</h1>
+      
+        <p class="bright">My Favorite Hobbies and Activities</p>
+        <p><ul style="font-family: monospace; font-style: oblique; font-weight: 900;">
+            <li>Producing Music</li>
+            <li>Hiking</li>
+            <li>Eating at Local Restaurants</li>
+            <li>Attending Concerts</li>
+            <li>Going to the Movie Theater</li>
+        </ul></p>
+        <p class="bright">My Favorite Restaurants</p>
+    
+        <p><ul>
+            <li class="design"><a href="https://www.bridgepizza.com">Bridge Pizza</a></li>
+            <li class="design"><a href="https://elcazadormt.org">El Cazador</a></li>
+            <li class="design"><a href="https://www.fiveguys.com">Five Guys</a></li>
+            <li class="design"><a href="https://www.hokkaidoramen.life">Hokkaido Ramen</a></li>
+            <li class="design"><a href="https://paulspancake.com">Pauls Pancake Parlor</a></li>
+        </ul></p>
+   <p class="bright">My Favorite Websites</p>
+   <p><ol>
+    <li class="design"><a href="https://www.target.com/">Target</a></li>
+    <li class="design"><a href="https://www.amazon.com">Amazon</a></li>
+    <li class="design"><a href="https://www.youtube.com">YouTube</a></li>
+    <li class="design"><a href="https://www.google.com">Google</a></li>
+    <li class="design"><a href="https://www.nike.com">Nike</a></li>
+   </ol></p>
+   <p>
+    <h3>
+      More text will be inserted here!
+    </h3>
+   </p>
+   <p>
+    Do you like my website?
+   </p>
+   <p>
+    <p>
+      <form>
+          <label for="yes" class="label3">Yes</label>
+      <input type="checkbox" id="yes" name="yes" value="yes"
+      <label for="no" class="no">No</label>
+      <input type="checkbox" id="no" name="no" value="no"
+      </form>
+      <button type="button" class="btn btn-primary" onclick='checkboxes()'>Submit</button>
+  </p>
+  <p>
+    <a href="page2_story.html">Go to Page 2</a>
+    <a href="page3.html">Go to Page 3</a>
+   
+   
+   
+   
+   
+   
+    </body>
+
+
+
+
+
+
+    </html>
